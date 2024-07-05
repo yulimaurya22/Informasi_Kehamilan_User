@@ -4,31 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F3FDF4"
+    android:background="@drawable/gradient"
     tools:context=".beranda">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Welcome to"
+        android:textColor="#FFFFFF"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:text="Informasi Kehamilan"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/notif"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="290dp"
+        android:onClick="notif"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_baseline_notifications_active_24"/>
+
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="196dp"
-        android:background="@drawable/gradient">
+        android:layout_height="710dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/color">
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="50dp"
-            android:text="Welcome to \nInformasi Kehamilan"
-            android:textColor="#FFFFFF"
-            android:textSize="25dp"
-            android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/ibu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="260dp"
-            app:srcCompat="@drawable/ibu" />
 
     </RelativeLayout>
 
@@ -36,20 +55,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="250dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="175dp"
+        android:layout_marginBottom="300dp"
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tanda Bahaya Kehamilan"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,7 +69,7 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cdringan"
+            android:id="@+id/cardringan"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="3dp"
@@ -69,7 +80,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@color/white">
 
                 <ImageView
                     android:id="@+id/ringan"
@@ -82,11 +94,11 @@
                     android:id="@+id/Ringan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#CD8398"
+                    android:background="#673AB7"
                     android:text="Tanda Bahaya Ringan"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -103,7 +115,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@color/white">
 
                 <ImageView
                     android:id="@+id/berat"
@@ -116,16 +129,15 @@
                     android:id="@+id/Berat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#FFCD8398"
+                    android:background="#673AB7"
                     android:text="Tanda Bahaya Berat"
                     android:textAlignment="center"
-                    android:textColor="#F8F4F4"
-                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-    </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cdlainnya"
@@ -136,31 +148,52 @@
             app:cardCornerRadius="15dp"
             app:cardElevation="5dp">
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/lainnya"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                app:srcCompat="@drawable/ringan" />
 
-                <ImageView
-                    android:id="@+id/lainnya"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    app:srcCompat="@drawable/ringan" />
-
-                <TextView
-                    android:id="@+id/Lainnya"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFCD8398"
-                    android:text="Tanda Bahaya Lainnya"
-                    android:textAlignment="center"
-                    android:textColor="#F8F4F4"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
+            <TextView
+                android:id="@+id/Lainnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#673AB7"
+                android:text="Tanda Bahaya Lainnya"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fg_bar"
+        android:layout_above="@id/navbar">
+
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       app:menu="@menu/menu_item"
+        android:id="@+id/navbar"/>
+
+
 </RelativeLayout>

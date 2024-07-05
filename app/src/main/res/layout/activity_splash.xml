@@ -7,6 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="@color/white"
     tools:context=".splash_screen">
 
 

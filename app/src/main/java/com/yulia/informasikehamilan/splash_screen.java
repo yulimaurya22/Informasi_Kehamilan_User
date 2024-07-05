@@ -13,20 +13,17 @@ public class splash_screen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_splash);
         getSupportActionBar().hide();
-        setContentView(R.layout.splash_screen);
 
-        int SPLASH_TIME=2000;
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(splash_screen.this,login.class);
-                splash_screen.this.startActivity(intent);
-                splash_screen.this.finish();
-            }
-        }, SPLASH_TIME);
+     final Handler handler = new Handler();
+     handler.postDelayed(new Runnable() {
+         @Override
+         public void run() {
+             startActivity(new Intent(getApplicationContext(),login.class));
+             finish();
+         }
+     },2000L);
     }
 }
