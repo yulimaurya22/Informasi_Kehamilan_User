@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".historyFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/gradient"></RelativeLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="History"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="710dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/color">
+
+        <Button
+            android:id="@+id/jam"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="jam"
+            android:text="Jam Praktek Bidan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+             />
+
+        <Button
+            android:id="@+id/riwayat"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Riwayat Periksa"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:layout_marginTop="90dp"
+            android:textStyle="bold"
+           />
+    </RelativeLayout>
+
+
+
+</FrameLayout>
