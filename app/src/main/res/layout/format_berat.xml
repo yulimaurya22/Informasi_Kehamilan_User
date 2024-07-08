@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/judulberat"
+                android:hint="judul berat"
+                android:textSize="20dp"
+                android:textColorHint="@color/white"
+                android:background="@color/purple_200"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/keteranganberat"
+                android:textColor="@color/black"
+                android:text="Keterangan"
+                android:layout_below="@+id/judulberat"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gejalaberat"
+                android:textColor="@color/black"
+                android:text="Gejala"
+                android:layout_below="@+id/keteranganberat"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/penyebabberat"
+                android:textColor="@color/black"
+                android:text="Penyebab"
+                android:layout_below="@+id/gejalaberat"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/penangananberat"
+                android:textColor="@color/black"
+                android:text="Penanganan"
+                android:layout_below="@+id/penyebabberat"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
