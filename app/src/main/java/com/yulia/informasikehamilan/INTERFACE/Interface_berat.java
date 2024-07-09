@@ -8,6 +8,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface Interface_berat {
-    @GET("berat")
+    @GET("berat/")
     Call<List<Model_berat>> tampilBerat();
 }
