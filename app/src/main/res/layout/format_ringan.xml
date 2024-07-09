@@ -15,8 +15,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/judulberat"
-                android:hint="judul berat"
+                android:id="@+id/judulringan"
+                android:hint="judul ringan"
                 android:textSize="25dp"
                 android:textAlignment="center"
                 android:textColorHint="@color/white"
@@ -25,76 +25,76 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Tketeranganberat"
+                android:id="@+id/Tketeranganringan"
                 android:textColor="@color/black"
                 android:text="Keterangan"
                 android:textSize="20dp"
-                android:layout_below="@+id/judulberat"/>
+                android:layout_below="@+id/judulringan"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/keteranganberat"
+                android:id="@+id/keteranganringan"
                 android:hint="keterangan"
                 android:textColorHint="@color/black"
-                android:layout_below="@+id/Tketeranganberat"
+                android:layout_below="@+id/Tketeranganringan"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Tgejalaberat"
+                android:id="@+id/Tgejalaringan"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:text="Gejala"
                 android:textSize="20dp"
-                android:layout_below="@+id/keteranganberat"/>
+                android:layout_below="@+id/keteranganringan"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/gejalaberat"
+                android:id="@+id/gejalaringan"
                 android:hint="gejala"
                 android:textColorHint="@color/black"
-                android:layout_below="@+id/Tgejalaberat"
+                android:layout_below="@+id/Tgejalaringan"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Tpenyebabberat"
+                android:id="@+id/Tpenyebabringan"
                 android:textColor="@color/black"
                 android:text="Penyebab"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_below="@+id/gejalaberat"/>
+                android:layout_below="@+id/gejalaringan"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/penyebabberat"
+                android:id="@+id/penyebabringan"
                 android:hint="penyebab"
                 android:textColorHint="@color/black"
-                android:layout_below="@+id/Tpenyebabberat"
+                android:layout_below="@+id/Tpenyebabringan"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Tpenangananberat"
+                android:id="@+id/Tpenangananringan"
                 android:textColor="@color/black"
                 android:text="Penanganan"
                 android:layout_marginTop="10dp"
                 android:textSize="20dp"
-                android:layout_below="@+id/penyebabberat"/>
+                android:layout_below="@+id/penyebabringan"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/penangananberat"
+                android:id="@+id/penangananringan"
                 android:hint="penanganan"
                 android:textColorHint="@color/black"
-                android:layout_below="@+id/Tpenangananberat"
+                android:layout_below="@+id/Tpenangananringan"
                 />
 
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".profilFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -25,9 +26,94 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="710dp"
-        android:layout_marginTop="120dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="250dp"
         android:background="@drawable/color">
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="250dp"
+        android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white">
+
+
+                        <TextView
+                            android:id="@+id/namauser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nama"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginLeft="15dp"/>
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Username"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginLeft="15dp"/>
+
+                        <TextView
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Password"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Edit Profil"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="530dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@color/purple_200" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Logout"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="530dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@color/purple_200" />
+
+
+
+
+
 
 </FrameLayout>
