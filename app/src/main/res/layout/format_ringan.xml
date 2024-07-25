@@ -2,25 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="15dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/white">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/judulringan"
-                android:hint="judul ringan"
+                android:text="judul ringan"
                 android:textSize="25dp"
                 android:textAlignment="center"
-                android:textColorHint="@color/white"
-                android:background="@color/purple_500"/>
+                android:textColor="@color/purple_500"
+                android:background="@drawable/color"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -28,34 +32,41 @@
                 android:id="@+id/Tketeranganringan"
                 android:textColor="@color/black"
                 android:text="Keterangan"
+                android:layout_marginLeft="10dp"
                 android:textSize="20dp"
                 android:layout_below="@+id/judulringan"/>
 
             <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/keteranganringan"
                 android:hint="keterangan"
-                android:textColorHint="@color/black"
+                android:textColor="@color/black"
                 android:layout_below="@+id/Tketeranganringan"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
                 android:id="@+id/Tgejalaringan"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:text="Gejala"
+                android:layout_marginLeft="10dp"
                 android:textSize="20dp"
                 android:layout_below="@+id/keteranganringan"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:id="@+id/gejalaringan"
+                android:layout_marginRight="10dp"
                 android:hint="gejala"
-                android:textColorHint="@color/black"
+                android:textColor="@color/black"
                 android:layout_below="@+id/Tgejalaringan"
                 />
 
@@ -64,7 +75,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/Tpenyebabringan"
                 android:textColor="@color/black"
+                android:layout_marginRight="10dp"
                 android:text="Penyebab"
+                android:layout_marginLeft="10dp"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_below="@+id/gejalaringan"/>
@@ -73,8 +86,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/penyebabringan"
+                android:layout_marginLeft="10dp"
                 android:hint="penyebab"
-                android:textColorHint="@color/black"
+                android:textColor="@color/black"
                 android:layout_below="@+id/Tpenyebabringan"
                 />
 
@@ -86,6 +100,7 @@
                 android:text="Penanganan"
                 android:layout_marginTop="10dp"
                 android:textSize="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_below="@+id/penyebabringan"/>
 
             <TextView
@@ -93,7 +108,10 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/penangananringan"
                 android:hint="penanganan"
-                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_below="@+id/Tpenangananringan"
                 />
 
