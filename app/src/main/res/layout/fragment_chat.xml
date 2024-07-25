@@ -3,13 +3,337 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     tools:context=".chatFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         />
+        android:layout_height="300dp"
+        android:background="@drawable/gradient"></RelativeLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Tentang"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="710dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/color"
+        android:padding="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/Rlayout"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/fotoprofil"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profil"
+                    android:text="Profil Bidan"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple_500"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/color"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Tbidan"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="Nama Bidan   :"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/fotoprofil" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bidan"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="100dp"
+                    android:hint="Nama Bidan"
+                    android:layout_toRightOf="@+id/Tbidan" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Talamat"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:text="Alamat            :"
+                    android:layout_below="@+id/Tbidan"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/alamat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="130dp"
+                    android:hint="Alamat"
+                    android:layout_toRightOf="@+id/Talamat"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Tjenis"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Jenis Kelamin :"
+                    android:layout_below="@+id/Talamat"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jenis"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="160dp"
+                    android:hint="jenis"
+                    android:layout_toRightOf="@+id/Tjenis"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Ttelp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="No. Telepon   :"
+                    android:layout_below="@+id/Tjenis"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="190dp"
+                    android:hint="telp"
+                    android:layout_toRightOf="@+id/Ttelp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="250dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jam"
+                    android:text="Jam Buka Bidan"
+                    android:textSize="20dp"
+                    android:textColor="@color/purple_500"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/color"/>
+
+
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txsenin"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="Senin    :"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@+id/jam"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/senin"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:hint="Senin"
+                    android:layout_marginLeft="80dp"
+                    android:layout_below="@+id/jam"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txselasa"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:text="Selasa  :"
+                    android:layout_below="@+id/senin"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selasa"
+                    android:textSize="12dp"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="80dp"
+                    android:hint="Selasa"
+                    android:layout_below="@+id/senin"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txrabu"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:text="Rabu     :"
+                    android:layout_below="@+id/selasa"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/rabu"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="80dp"
+                    android:hint="Rabu"
+                    android:layout_below="@+id/selasa"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txkamis"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:text="Kamis   :"
+                    android:layout_below="@+id/rabu"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kamis"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="80dp"
+                    android:hint="Kamis"
+                    android:layout_below="@+id/rabu"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txjumat"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Jum'at  :"
+                    android:layout_below="@+id/kamis"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jumat"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="80dp"
+                    android:hint="Jum'at"
+                    android:layout_below="@+id/kamis"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txsabtu"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:text="Sabtu    :"
+                    android:layout_below="@+id/jumat"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sabtu"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="80dp"
+                    android:hint="Sabtu"
+                    android:layout_below="@+id/jumat"/>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txminggu"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:text="Minggu :"
+                    android:layout_below="@+id/sabtu"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/minggu"
+                    android:layout_marginTop="13dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="80dp"
+                    android:hint="Minggu"
+                    android:layout_below="@+id/sabtu"/>
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
 
 </FrameLayout>

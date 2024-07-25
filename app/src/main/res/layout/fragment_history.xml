@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".historyFragment">
-
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -28,33 +28,217 @@
         android:layout_width="match_parent"
         android:layout_height="710dp"
         android:layout_marginTop="120dp"
-        android:background="@drawable/color">
+        android:background="@drawable/color"
+        android:padding="20dp">
 
-        <Button
-            android:id="@+id/jam"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="20dp"
-            android:onClick="jam"
-            android:text="Jam Praktek Bidan"
-            android:textSize="20sp"
-            android:textStyle="bold"
-             />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="20dp"
+            app:cardElevation="5dp">
 
-        <Button
-            android:id="@+id/riwayat"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:text="Riwayat Periksa"
-            android:layout_marginLeft="20dp"
-            android:textSize="20sp"
-            android:layout_marginTop="90dp"
-            android:textStyle="bold"
-           />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/riwayat"
+                    android:text="Riwayat Periksa Pasien"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_500"
+                    android:background="@drawable/color"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nama"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:hint="Nama Bunda"
+                    android:layout_marginLeft="175dp"
+                    android:layout_below="@+id/riwayat"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwnama"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Nama Bunda                  :"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@+id/riwayat"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usia"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:hint="Usia Kehamilan"
+                    android:layout_marginLeft="175dp"
+                    android:layout_below="@+id/nama"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwusia"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Usia Kehamilan             :"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@+id/nama"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bb"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="175dp"
+                    android:hint="Berat Badan Bunda"
+                    android:layout_below="@+id/usia"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwbb"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:text="Berat Badan Bunda       :"
+                    android:layout_below="@+id/usia"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tb"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:hint="Tinggi Badan Bunda"
+                    android:layout_below="@+id/bb"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwtb"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Tinggi Badan Bunda      :"
+                    android:layout_below="@+id/bb"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tekanan"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="175dp"
+                    android:hint="Tekanan Darah"
+                    android:layout_below="@+id/tb"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwtekanan"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:text="Tekanan Darah               :"
+                    android:layout_below="@+id/tb"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/beratjanin"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="175dp"
+                    android:hint="Berat Janin"
+                    android:layout_below="@+id/tekanan"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwberatjanin"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:text="Berat Janin                      :"
+                    android:layout_below="@+id/tekanan"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panjangjanin"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:hint="Panjang Janin"
+                    android:layout_marginLeft="175dp"
+                    android:layout_below="@+id/beratjanin"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwpanjangjanin"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:text="Panjang Janin                 :"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@+id/beratjanin"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detak"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="175dp"
+                    android:textColor="@color/black"
+                    android:hint="Detak Jantung Janin"
+                    android:layout_below="@+id/panjangjanin"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwdetak"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/black"
+                    android:text="Detak Jantung Janin     :"
+                    android:layout_below="@+id/panjangjanin"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/obat"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:hint="Obat yang dikonsumsi"
+                    android:layout_below="@+id/detak"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rwobat"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Obat yang dikonsumsi  :"
+                    android:layout_below="@+id/detak"/>
+
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
 
 
