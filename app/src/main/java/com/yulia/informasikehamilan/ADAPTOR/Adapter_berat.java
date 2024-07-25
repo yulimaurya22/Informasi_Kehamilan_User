@@ -10,15 +10,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.yulia.informasikehamilan.MODEL.Model_berat;
+import com.yulia.informasikehamilan.MODEL.Model_ringan;
 import com.yulia.informasikehamilan.R;
 
 import java.util.ArrayList;
 
 public class Adapter_berat extends RecyclerView.Adapter<Adapter_berat.myViewHolder> {
 
-    ArrayList<Model_berat> beratArrayList;
+    ArrayList<Model_ringan> beratArrayList;
 
-    public Adapter_berat(ArrayList<Model_berat> beratArrayList) {
+    public Adapter_berat(ArrayList<Model_ringan> beratArrayList) {
         this.beratArrayList = beratArrayList;
     }
 
@@ -41,7 +42,7 @@ public class Adapter_berat extends RecyclerView.Adapter<Adapter_berat.myViewHold
         holder.epenyebab.setText(beratArrayList.get(position).getPenyebab());
         holder.epenanganan.setText(beratArrayList.get(position).getPenanganan());
     }
-//jumlah data yang bergulir didalam recyclerview
+    //jumlah data yang bergulir didalam recyclerview
     @Override
     public int getItemCount() {
         return beratArrayList.size();

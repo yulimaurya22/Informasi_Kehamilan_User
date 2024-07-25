@@ -3,10 +3,10 @@ package com.yulia.informasikehamilan.MODEL;
 import java.util.ArrayList;
 
 public class Model_berat extends ArrayList<Model_berat> {
-   private String judul;
+    private String judul;
     private String keterangan;
-   private String gejala;
-   private String penyebab;
+    private String gejala;
+    private String penyebab;
     private String penanganan;
 
     public Model_berat(String judul, String keterangan) {

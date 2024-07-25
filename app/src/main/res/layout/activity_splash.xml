@@ -1,30 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:background="@color/white"
-    tools:context=".splash_screen">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
 
-
-
-    <ImageView
-        android:id="@+id/ibuhamil"
-        android:layout_width="248dp"
-        android:layout_height="260dp"
-        android:src="@drawable/ibu" />
-
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-20dp"
-        android:text="Welcome Baby"
-        android:textColor="@color/black"
-        android:textSize="35dp"
-        android:textStyle="bold" />
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/judulberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color"
+                android:text="judul berat"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/Tketeranganberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judulberat"
+                android:text="Keterangan"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/keteranganberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tketeranganberat"
+                android:hint="keterangan"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Tgejalaberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/keteranganberat"
+                android:layout_marginTop="10dp"
+                android:text="Gejala"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/gejalaberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tgejalaberat"
+                android:hint="gejala"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Tpenyebabberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gejalaberat"
+                android:layout_marginTop="10dp"
+                android:text="Penyebab"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/penyebabberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tpenyebabberat"
+                android:hint="penyebab"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Tpenangananberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/penyebabberat"
+                android:layout_marginTop="10dp"
+                android:text="Penanganan"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/penangananberat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tpenangananberat"
+                android:hint="penanganan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

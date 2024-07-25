@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/gradient"
     tools:context=".berat">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recycleviewberat"
-      tools:listitem="@layout/format_berat">
+        tools:listitem="@layout/format_berat">
 
     </androidx.recyclerview.widget.RecyclerView>
 
