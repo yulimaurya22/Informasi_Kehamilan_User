@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:padding="15dp"
     tools:context=".notif">
 
-    <androidx.cardview.widget.CardView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:cardCornerRadius="5dp">
+        android:layout_height="wrap_content"
+        android:id="@+id/recycleviewNotif"
+        tools:listitem="@layout/format_notif">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/white">
+    </androidx.recyclerview.widget.RecyclerView>
 
-            <ImageView
-                android:id="@+id/icon"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="340dp"
-                android:src="@drawable/ic_baseline_circle_notifications_24"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/profil"
-                android:text="Terdapat informasi Tanda Bahata Kehamilan Berat baru"
-                android:textSize="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="70dp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
-
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
 </RelativeLayout>
